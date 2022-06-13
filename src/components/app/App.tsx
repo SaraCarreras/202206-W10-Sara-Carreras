@@ -1,9 +1,5 @@
-import React from 'react';
-
-//import bertin from '../../img/bertin.jpg';
-
+//import React from 'react';
 import { Gentlemen } from '../gentleman/gentleman';
-
 import { Header } from '../header/header';
 
 export function App() {
