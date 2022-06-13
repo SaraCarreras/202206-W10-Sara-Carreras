@@ -1,4 +1,4 @@
-export const caspArr = [
+export const INITIAL_STATE = [
     {
         id: 1,
         name: 'Barney Stinson',

@@ -1,11 +1,15 @@
 //aqí va la parte del html con la li o el ul de gentlemen, useState? min 10
-import { caspArr } from '../arr';
-import { useState } from 'react';
 
-//MOSTRAR IMÁGENES INTERANDO SOBRE ARR.TSX
+import { useEffect, useState } from 'react';
+import { iCaspArr } from '../interfaces/gentleman';
+import { INITIAL_STATE } from '../arr';
 
 export function Gentlemen() {
-    const [gentleman, setGentleman] = useState(caspArr);
+    const [gentleman, setGentleman] = useState<Array<iCaspArr>>([]);
+
+    useEffect(() => {
+        setGentleman(INITIAL_STATE);
+    }, []);
 
     return (
         <ul className="gentlemen">

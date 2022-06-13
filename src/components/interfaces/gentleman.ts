@@ -1,5 +1,4 @@
-export {};
-/*export interface iCaspArr {
+export interface iCaspArr {
     id: number;
     name: string;
     status: string;
@@ -10,5 +9,3 @@ export {};
     selected: boolean;
     initial: string;
 }
-export type iCaspArrs = Array<iCaspArr>;
-*/
