@@ -2,19 +2,18 @@
 
 import { Gentlemen } from '../gentleman/gentleman';
 import { Header } from '../header/header';
-import { Info } from '../info/info';
+
 import { ButtonSelect } from '../buttonSelect/buttonSelect';
+import { Info } from '../info/info';
 
 export function App() {
     return (
         <>
-            <Header></Header>
             <div className="container">
-                <header className="main-header">
-                    <h1 className="main-title">The pointing gentlemen</h1>
-                </header>
+                <Header></Header>
+
                 <section className="controls">
-                    <p className="info">0 gentlemen pointing at you</p>
+                    <Info></Info>
                     <ButtonSelect></ButtonSelect>
                 </section>
 

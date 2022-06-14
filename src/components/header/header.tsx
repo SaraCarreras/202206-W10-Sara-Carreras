@@ -1,8 +1,7 @@
 export function Header() {
-    const title = 'Learning React';
     return (
-        <header>
-            <h1>{title}</h1>
+        <header className="main-header">
+            <h1 className="main-title">The pointing gentlemen</h1>
         </header>
     );
 }
