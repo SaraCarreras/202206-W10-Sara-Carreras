@@ -3,9 +3,10 @@
 import { useEffect, useState } from 'react';
 import { iCaspArr } from '../interfaces/gentleman';
 import { INITIAL_STATE } from '../arr';
+import { iCaspArrType } from '../interfaces/gentleman';
 
 export function Gentlemen({ children }: { children: JSX.Element }) {
-    const [gentleman, setGentleman] = useState<Array<iCaspArr>>([]);
+    const [gentleman, setGentleman] = useState<iCaspArrType>([]);
 
     useEffect(() => {
         setGentleman(INITIAL_STATE);
