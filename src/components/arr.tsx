@@ -31,6 +31,6 @@ export const INITIAL_STATE: Array<iCaspArr> = [
         picture: 'asch.png',
         alternativeText: 'Asch pointing at you',
         selected: true,
-        initial: 'J',
+        initial: 'A',
     },
 ];
