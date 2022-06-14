@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { iCaspArr } from '../interfaces/gentleman';
 import { INITIAL_STATE } from '../arr';
 import { Info } from '../info/info';
+import { ButtonDelete } from '../button/buttonDelete';
 
 export function Gentlemen() {
     const [gentleman, setGentleman] = useState<Array<iCaspArr>>([]);
@@ -55,6 +56,7 @@ export function Gentlemen() {
                                         </li>
                                     </ul>
                                 </div>
+                                <ButtonDelete></ButtonDelete>
                             </li>
                         </>
                     );

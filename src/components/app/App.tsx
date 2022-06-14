@@ -1,5 +1,5 @@
 //import React from 'react';
-import { ButtonDelete } from '../button/buttonDelete';
+
 import { Gentlemen } from '../gentleman/gentleman';
 import { Header } from '../header/header';
 import { Info } from '../info/info';
