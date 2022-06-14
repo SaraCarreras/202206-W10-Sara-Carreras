@@ -3,9 +3,8 @@
 import { useEffect, useState } from 'react';
 import { iCaspArr } from '../interfaces/gentleman';
 import { INITIAL_STATE } from '../arr';
-import { ButtonDelete } from '../button/buttonDelete';
 
-export function Gentlemen() {
+export function Gentlemen({ children }: { children: JSX.Element }) {
     const [gentleman, setGentleman] = useState<Array<iCaspArr>>([]);
 
     useEffect(() => {
@@ -55,7 +54,7 @@ export function Gentlemen() {
                                         </li>
                                     </ul>
                                 </div>
-                                <ButtonDelete></ButtonDelete>
+                                {children}
                             </li>
                         </>
                     );
