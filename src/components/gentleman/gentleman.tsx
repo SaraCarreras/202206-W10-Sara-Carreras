@@ -1,7 +1,7 @@
 //aqí va la parte del html con la li o el ul de gentlemen, useState? min 10
 
 import { useEffect, useState } from 'react';
-import { iCaspArr } from '../interfaces/gentleman';
+//import { iCaspArr } from '../interfaces/gentleman';
 import { INITIAL_STATE } from '../arr';
 import { iCaspArrType } from '../interfaces/gentleman';
 
