@@ -1,6 +1,9 @@
 //import React from 'react';
+import { ButtonDelete } from '../button/buttonDelete';
 import { Gentlemen } from '../gentleman/gentleman';
 import { Header } from '../header/header';
+import { Info } from '../info/info';
+import { ButtonSelect } from '../buttonSelect/buttonSelect';
 
 export function App() {
     return (
@@ -12,15 +15,11 @@ export function App() {
                 </header>
                 <section className="controls">
                     <p className="info">0 gentlemen pointing at you</p>
-                    <button className="button button--select">
-                        Select all
-                    </button>
+                    <ButtonSelect></ButtonSelect>
                 </section>
+
                 <main className="main">
-                    {
-                        <Gentlemen></Gentlemen>
-                        /*AQUI ESTABA DIV GENTLEMEN */
-                    }
+                    <Gentlemen></Gentlemen>
                 </main>
             </div>
         </>

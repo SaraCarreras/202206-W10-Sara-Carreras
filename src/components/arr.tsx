@@ -1,4 +1,5 @@
-export const INITIAL_STATE = [
+import { iCaspArr } from './interfaces/gentleman';
+export const INITIAL_STATE: Array<iCaspArr> = [
     {
         id: 1,
         name: 'Barney Stinson',
