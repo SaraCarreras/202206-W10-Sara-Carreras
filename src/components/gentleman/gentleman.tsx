@@ -18,7 +18,7 @@ export function Gentlemen({ children }: { children: JSX.Element }) {
                 {gentleman.map((gentle) => {
                     return (
                         <>
-                            <li className="gentleman">
+                            <li key={gentle.id} className="gentleman">
                                 <div className="gentleman__avatar-container">
                                     <img
                                         className="gentleman__avatar"

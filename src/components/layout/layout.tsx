@@ -2,7 +2,7 @@ import { Gentlemen } from '../gentleman/gentleman';
 import { Header } from '../header/header';
 import { ButtonDelete } from '../button/buttonDelete';
 
-import { ButtonSelect } from '../buttonSelect/buttonSelect';
+//import { ButtonSelect } from '../buttonSelect/buttonSelect';
 import { Info } from '../info/info';
 
 export function Layout() {
@@ -12,7 +12,7 @@ export function Layout() {
 
             <section className="controls">
                 <Info></Info>
-                <ButtonSelect></ButtonSelect>
+                {/* <ButtonSelect></ButtonSelect> */}
             </section>
 
             <main className="main">
