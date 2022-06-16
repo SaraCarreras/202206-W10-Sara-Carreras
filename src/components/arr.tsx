@@ -7,8 +7,8 @@ export const INITIAL_STATE = [
         twitter: '@stinson',
         picture: 'barney.gif',
         alternativeText: 'Barney pointing at you',
-        selected: true,
         initial: 'B',
+        selected: true,
     },
     {
         name: 'The Farytales',
@@ -18,8 +18,8 @@ export const INITIAL_STATE = [
         picture: 'fary.jpg',
         alternativeText: 'The Fary pointing at you',
         id: 2,
-        selected: false,
         initial: 'F',
+        selected: false,
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ export const INITIAL_STATE = [
         twitter: '@fryKetchup',
         picture: 'asch.png',
         alternativeText: 'Asch pointing at you',
-        selected: true,
         initial: 'A',
+        selected: true,
     },
 ];

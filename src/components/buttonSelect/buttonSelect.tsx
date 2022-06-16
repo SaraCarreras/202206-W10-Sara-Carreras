@@ -3,7 +3,7 @@ export function Button({
     handleButton,
 }: {
     allSelected: boolean;
-    handleButton: (selectedValue: boolean) => void;
+    handleButton: (selectedButton: boolean) => void;
 }) {
     return (
         <button

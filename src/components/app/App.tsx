@@ -4,17 +4,15 @@ import { Gentlemen } from '../gentleman/gentleman';
 import { Header } from '../header/header';
 import { ButtonDelete } from '../button/buttonDelete';
 import { Button } from '../buttonSelect/buttonSelect';
-
-//import { ButtonSelect } from '../buttonSelect/buttonSelect';
 import { Info } from '../info/info';
 import { INITIAL_STATE } from '../arr';
 
 function App() {
     const [initialArr, setInitialArr] = useState(INITIAL_STATE);
 
-    const handleButton = (selectedValue: boolean): void => {
+    const handleButton = (selectedButton: boolean): void => {
         setInitialArr(
-            initialArr.map((item) => ({ ...item, selected: selectedValue }))
+            initialArr.map((item) => ({ ...item, selected: selectedButton }))
         );
     };
 
@@ -26,6 +24,18 @@ function App() {
         return counter;
     };
 
+    const deleteFromArr = (gentId: number) => {
+        setInitialArr(initialArr.filter((item) => item.id !== gentId && item));
+    };
+    const greenCheckButton = (gentId: number) => {
+        setInitialArr(
+            initialArr.map((item) =>
+                item.id === gentId
+                    ? { ...item, selected: !item.selected }
+                    : item
+            )
+        );
+    };
     return (
         <div className="container">
             <Header></Header>
@@ -39,8 +49,12 @@ function App() {
             </section>
 
             <main className="main">
-                <Gentlemen>
-                    <ButtonDelete></ButtonDelete>
+                <Gentlemen initialArr={initialArr}>
+                    <ButtonDelete
+                        initialArr={initialArr}
+                        handleDeleteButton={deleteFromArr}
+                        greenCheckButton={greenCheckButton}
+                    ></ButtonDelete>
                 </Gentlemen>
             </main>
         </div>
