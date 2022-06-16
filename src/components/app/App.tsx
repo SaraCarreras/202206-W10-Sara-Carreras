@@ -24,13 +24,15 @@ function App() {
         return counter;
     };
 
-    const deleteFromArr = (gentId: number) => {
-        setInitialArr(initialArr.filter((item) => item.id !== gentId && item));
+    const deleteFromArr = (elementId: number) => {
+        setInitialArr(
+            initialArr.filter((item) => item.id !== elementId && item)
+        );
     };
-    const greenCheckButton = (gentId: number) => {
+    const greenCheckButton = (elementId: number) => {
         setInitialArr(
             initialArr.map((item) =>
-                item.id === gentId
+                item.id === elementId
                     ? { ...item, selected: !item.selected }
                     : item
             )
