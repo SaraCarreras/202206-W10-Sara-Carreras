@@ -9,3 +9,4 @@ export interface iCaspArr {
     selected: boolean;
     initial: string;
 }
+export type iCaspArrType = Array<iCaspArr>;

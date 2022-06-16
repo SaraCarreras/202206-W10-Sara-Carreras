@@ -1,5 +1,4 @@
-import { iCaspArr } from './interfaces/gentleman';
-export const INITIAL_STATE: Array<iCaspArr> = [
+export const INITIAL_STATE = [
     {
         id: 1,
         name: 'Barney Stinson',
@@ -8,8 +7,8 @@ export const INITIAL_STATE: Array<iCaspArr> = [
         twitter: '@stinson',
         picture: 'barney.gif',
         alternativeText: 'Barney pointing at you',
-        selected: true,
         initial: 'B',
+        selected: true,
     },
     {
         name: 'The Farytales',
@@ -19,8 +18,8 @@ export const INITIAL_STATE: Array<iCaspArr> = [
         picture: 'fary.jpg',
         alternativeText: 'The Fary pointing at you',
         id: 2,
-        selected: false,
         initial: 'F',
+        selected: false,
     },
     {
         id: 3,
@@ -30,7 +29,7 @@ export const INITIAL_STATE: Array<iCaspArr> = [
         twitter: '@fryKetchup',
         picture: 'asch.png',
         alternativeText: 'Asch pointing at you',
+        initial: 'A',
         selected: true,
-        initial: 'J',
     },
 ];

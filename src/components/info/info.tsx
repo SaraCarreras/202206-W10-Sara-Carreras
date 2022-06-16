@@ -1,8 +1,8 @@
-//import { useEffect, useState } from 'react';
-
-//import { INITIAL_STATE } from '../arr';
-//import { Button } from '../button/button';
-
-export function Info() {
-    return <p className="info">0 gentlemen pointing at you</p>;
+export function Info({ counter }: { counter: number }) {
+    /*  const handleClick = (allSelected: number) => {
+        setCounter((prev) => (prev = allSelected));
+        console.log('click', counter);
+    };
+    */
+    return <p className="info">{counter} gentlemen pointing at you</p>;
 }
