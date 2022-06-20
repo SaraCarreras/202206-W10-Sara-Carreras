@@ -3,7 +3,7 @@ import { Gentlemen } from '../gentleman/gentleman';
 
 import { Header } from '../header/header';
 import { ButtonDelete } from '../button/buttonDelete';
-import { Button } from '../buttonSelect/buttonSelect';
+import { ButtonSelect } from '../buttonSelect/buttonSelect';
 import { Info } from '../info/info';
 import { INITIAL_STATE } from '../arr';
 
@@ -44,10 +44,10 @@ function App() {
 
             <section className="controls">
                 <Info counter={counterFunc()}></Info>
-                <Button
+                <ButtonSelect
                     allSelected={initialArr.every((item) => item.selected)}
                     handleButton={handleButton}
-                ></Button>
+                ></ButtonSelect>
             </section>
 
             <main className="main">
