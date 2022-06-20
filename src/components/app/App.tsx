@@ -51,11 +51,13 @@ function App() {
             </section>
 
             <main className="main">
-                <Gentlemen initialArr={initialArr}>
+                <Gentlemen
+                    initialArr={initialArr}
+                    greenCheckButton={greenCheckButton}
+                >
                     <ButtonDelete
                         initialArr={initialArr}
                         handleDeleteButton={deleteFromArr}
-                        greenCheckButton={greenCheckButton}
                     ></ButtonDelete>
                 </Gentlemen>
             </main>
