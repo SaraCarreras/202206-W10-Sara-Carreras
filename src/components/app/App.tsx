@@ -25,9 +25,7 @@ function App() {
     };
 
     const deleteFromArr = (elementId: number) => {
-        setInitialArr(
-            initialArr.filter((item) => item.id !== elementId && item)
-        );
+        setInitialArr(initialArr.filter((item) => item.id !== elementId));
     };
     const greenCheckButton = (elementId: number) => {
         setInitialArr(
