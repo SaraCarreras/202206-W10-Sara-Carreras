@@ -3,7 +3,7 @@ import { Gentlemen } from '../gentleman/gentleman';
 
 import { Header } from '../header/header';
 import { ButtonDelete } from '../button/buttonDelete';
-import { Button } from '../buttonSelect/buttonSelect';
+import { ButtonSelect } from '../buttonSelect/buttonSelect';
 import { Info } from '../info/info';
 import { INITIAL_STATE } from '../arr';
 
@@ -25,9 +25,7 @@ function App() {
     };
 
     const deleteFromArr = (elementId: number) => {
-        setInitialArr(
-            initialArr.filter((item) => item.id !== elementId && item)
-        );
+        setInitialArr(initialArr.filter((item) => item.id !== elementId));
     };
     const greenCheckButton = (elementId: number) => {
         setInitialArr(
@@ -44,18 +42,20 @@ function App() {
 
             <section className="controls">
                 <Info counter={counterFunc()}></Info>
-                <Button
+                <ButtonSelect
                     allSelected={initialArr.every((item) => item.selected)}
                     handleButton={handleButton}
-                ></Button>
+                ></ButtonSelect>
             </section>
 
             <main className="main">
-                <Gentlemen initialArr={initialArr}>
+                <Gentlemen
+                    initialArr={initialArr}
+                    greenCheckButton={greenCheckButton}
+                >
                     <ButtonDelete
                         initialArr={initialArr}
                         handleDeleteButton={deleteFromArr}
-                        greenCheckButton={greenCheckButton}
                     ></ButtonDelete>
                 </Gentlemen>
             </main>

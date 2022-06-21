@@ -3,9 +3,11 @@ import { iCaspArrType } from '../interfaces/gentleman';
 export function Gentlemen({
     children,
     initialArr,
+    greenCheckButton,
 }: {
     children: JSX.Element;
     initialArr: iCaspArrType;
+    greenCheckButton: (elementId: number) => void;
 }) {
     return (
         <>
@@ -55,6 +57,10 @@ export function Gentlemen({
                                     </li>
                                 </ul>
                             </div>
+                            <i
+                                className="icon gentleman__icon fas fa-check"
+                                onClick={() => greenCheckButton(gentle.id)}
+                            ></i>
 
                             {children}
                         </li>
