@@ -15,6 +15,7 @@ export function Gentlemen({
                 {initialArr.map((gentle) => {
                     return (
                         <li
+                            role={'contentinfo'}
                             key={gentle.id}
                             className={
                                 'gentleman' +
