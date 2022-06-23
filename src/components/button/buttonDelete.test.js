@@ -1,7 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { ButtonDelete } from './buttonDelete';
 import { INITIAL_STATE } from '../arr';
-import userEvent from '@testing-library/user-event';
 
 describe('Given the component ButtonDelete', () => {
     describe('When the component is clicked', () => {
@@ -14,10 +13,9 @@ describe('Given the component ButtonDelete', () => {
                     handleDeleteButton={deleteMock}
                 ></ButtonDelete>
             );
-            //console.log(component);
 
-            const deleteButon = screen.queryAllByTestId('child-button');
-            userEvent.click(deleteButon);
+            const deleteButtons = screen.queryAllByTestId('child-button');
+            fireEvent.click(deleteButtons[0]);
             expect(deleteMock).toHaveBeenCalled();
         });
     });
