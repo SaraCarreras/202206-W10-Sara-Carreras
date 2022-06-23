@@ -12,7 +12,7 @@ export function ButtonDelete({
         <>
             {initialArr.map((item) => {
                 return (
-                    <div key={item.id}>
+                    <div key={item.id} data-testid="child-button">
                         <i
                             className="icon gentleman__icon gentleman__icon--delete fas fa-times"
                             onClick={() => handleDeleteButton(item.id)}

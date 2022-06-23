@@ -15,7 +15,7 @@ export function Gentlemen({
                 {initialArr.map((gentle) => {
                     return (
                         <li
-                            role={'contentinfo'}
+                            //role={'contentinfo'}
                             key={gentle.id}
                             className={
                                 'gentleman' +
@@ -59,6 +59,7 @@ export function Gentlemen({
                                 </ul>
                             </div>
                             <i
+                                role="button"
                                 className="icon gentleman__icon fas fa-check"
                                 onClick={() => greenCheckButton(gentle.id)}
                             ></i>
