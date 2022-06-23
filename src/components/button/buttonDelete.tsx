@@ -14,6 +14,7 @@ export function ButtonDelete({
                 return (
                     <div key={item.id}>
                         <i
+                            data-testid="child-button"
                             className="icon gentleman__icon gentleman__icon--delete fas fa-times"
                             onClick={() => handleDeleteButton(item.id)}
                         ></i>
