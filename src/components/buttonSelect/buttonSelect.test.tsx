@@ -4,7 +4,7 @@ import { ButtonSelect } from './buttonSelect';
 describe('Given the component buttonSelect', () => {
     describe('When the component is rendered', () => {
         test('renders Sellect all as button name', () => {
-            render(<ButtonSelect />);
+            render(<ButtonSelect allSelected={true} handleButton={() => {}} />);
             const buttoName = screen.getByText(/Select all/i);
             expect(buttoName).toBeInTheDocument();
         });
